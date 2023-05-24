@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const headerCheck = require('../../src/methods/filter')
+const headerCheck = require('../../src/filter/filter')
 
 router.get('/login', (req, res, next) => {
     headerCheck.authenticate(req, res, next);
